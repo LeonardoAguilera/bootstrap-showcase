@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../js/bootstrap.bundle.js"></script>
+    <title>Tables</title>
+  </head>
+  <body>
+    <section class="container py-5 px-3 border-bottom border-primary">
+      <h1>Tables</h1>
+      <p>
+        Examples for opt-in styling of tables (given their prevalent use in
+        JavaScript plugins) with Bootstrap.
+      </p>
+    </section>
+
+    <section class="container py-5 px-5">
+      <h2>Examples</h2>
+      <p>
+        Due to the widespread use of <code>&lt;table&gt;</code> elements across
+        third-party widgets like calendars and date pickers, Bootstrap’s tables
+        are <strong>opt-in</strong>. Add the base class <code>.table</code> to
+        any <code>&lt;table&gt;</code>, then extend with our optional modifier
+        classes or custom styles. All table styles are not inherited in
+        Bootstrap, meaning any nested tables can be styled independent from the
+        parent.
+      </p>
+      <p>
+        Using the most basic table markup, here’s how <code>.table</code>-based
+        tables look in Bootstrap.
+      </p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+      <section class="border-bottom border-secondary py-2"></section>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Class</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Default</th>
+            <td>Cell</td>
+            <td>Cell</td>
+          </tr>
+
+          <tr class="table-primary">
+            <th scope="row">Primary</th>
+            <td>Cell</td>
+            <td>Cell</td>
+          </tr>
+          <tr class="table-secondary">
+            <th scope="row">Secondary</th>
+            <td>Cell</td>
+            <td>Cell</td>
+          </tr>
+          <tr class="table-success">
+            <th scope="row">Success</th>
+            <td>Cell</td>
+            <td>Cell</td>
+          </tr>
+          <tr class="table-danger">
+            <th scope="row">Danger</th>
+            <td>Cell</td>
+            <td>Cell</td>
+          </tr>
+          <tr class="table-warning">
+            <th scope="row">Warning</th>
+            <td>Cell</td>
+            <td>Cell</td>
+          </tr>
+          <tr class="table-info">
+            <th scope="row">Info</th>
+            <td>Cell</td>
+            <td>Cell</td>
+          </tr>
+          <tr class="table-light">
+            <th scope="row">Light</th>
+            <td>Cell</td>
+            <td>Cell</td>
+          </tr>
+          <tr class="table-dark">
+            <th scope="row">Dark</th>
+            <td>Cell</td>
+            <td>Cell</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>

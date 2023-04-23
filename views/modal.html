@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../js/bootstrap.bundle.js"></script>
+    <title>Modal</title>
+  </head>
+  <body>
+    <section class="container py-5 px-3 border-bottom border-primary">
+      <h1>Modal</h1>
+      <p class="bd-lead">
+        Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for
+        lightboxes, user notifications, or completely custom content.
+      </p>
+    </section>
+
+    <section class="container py-5 px-5">
+      <h2>Examples</h2>
+      <p class="border-bottom border-secondary py-2">
+        Toggle a working modal demo by clicking the button below. It will slide
+        down and fade in from the top of the page.
+      </p>
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModalLive"
+      >
+        Launch demo modal
+      </button>
+      <section
+        class="modal fade"
+        id="exampleModalLive"
+        tabindex="-1"
+        aria-labelledby="exampleModalLiveLabel"
+        aria-hidden="true"
+        style="display: none"
+      >
+        <section class="modal-dialog">
+          <section class="modal-content">
+            <section class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLiveLabel">
+                Modal title
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </section>
+            <section class="modal-body">
+              <p>Woo-hoo, you're reading this text in a modal!</p>
+            </section>
+            <section class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+  </body>
+</html>

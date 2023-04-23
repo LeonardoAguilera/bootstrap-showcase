@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../js/bootstrap.bundle.js"></script>
+    <title>Offcanvas</title>
+  </head>
+  <body>
+    <section class="container py-5 px-3 border-bottom border-primary">
+      <h1>Offcanvas</h1>
+      <p class="bd-lead">
+        Build hidden sidebars into your project for navigation, shopping carts,
+        and more with a few classes and the JavaScript plugin.
+      </p>
+    </section>
+
+    <section class="container py-5 px-5">
+      <h2>Examples</h2>
+      <p>
+        Below is an offcanvas example that is shown by default (via
+        <code>.show</code> on <code>.offcanvas</code>). Offcanvas includes
+        support for a header with a close button and an optional body class for
+        some initial <code>padding</code>.
+      </p>
+      <ul>
+        <li><code>.offcanvas</code> hides content (default)</li>
+        <li><code>.offcanvas.show</code> shows content</li>
+      </ul>
+      <p>
+        You can use a link with the <code>href</code> attribute, or a button
+        with the <code>data-bs-target</code> attribute. In both cases, the
+        <code>data-bs-toggle="offcanvas"</code> is required.
+      </p>
+      <section class="bd-example">
+        <a
+          class="btn btn-primary"
+          data-bs-toggle="offcanvas"
+          href="#offcanvasExample"
+          role="button"
+          aria-controls="offcanvasExample"
+        >
+          Link with href
+        </a>
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
+          Button with data-bs-target
+        </button>
+
+        <section
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <section class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+              Offcanvas
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </section>
+          <section class="offcanvas-body">
+            <section class="">
+              Some text as placeholder. In real life you can have the elements
+              you have chosen. Like, text, images, lists, etc.
+            </section>
+            <section class="dropdown mt-3">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+              >
+                Dropdown button
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+  </body>
+</html>

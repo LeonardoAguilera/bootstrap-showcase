@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(239, 242, 245);
+}
+
+.hover-effect:hover {
+  background-color: white;
+}
+
+.row > * {
+  padding-top: calc(var(--bs-gutter-x) * 0.5);
+  padding-bottom: calc(var(--bs-gutter-x) * 0.5);
+}
+
+.breadcrumb {
+  background-color: #e9ecef;
+  padding: .75rem 1rem;
+}
+
+.carousel-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.list-group {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.bd-example-placeholder-cards .card {
+  width: 18rem;
+}
+
+.progress {
+  margin-top: 1rem;
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: rgb(56, 56, 210);
+}

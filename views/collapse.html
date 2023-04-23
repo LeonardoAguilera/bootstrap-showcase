@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../js/bootstrap.bundle.js"></script>
+    <title>Collapse</title>
+  </head>
+  <body>
+    <section class="container py-5 px-3 border-bottom border-primary">
+      <h1>Collapse</h1>
+      <p>
+        Toggle the visibility of content across your project with a few classes
+        and the JavaScript plugins.
+      </p>
+    </section>
+
+    <section class="container py-5 px-5">
+      <h2>Examples</h2>
+      <p>
+        Click the buttons below to show and hide another element via class
+        changes:
+      </p>
+      <ul class="border-bottom border-secondary py-2">
+        <li><code>.collapse</code> hides content</li>
+        <li><code>.collapsing</code> is applied during transitions</li>
+        <li><code>.collapse.show</code> shows content</li>
+      </ul>
+
+      <section class="py-2">
+        <p>
+          <a
+            class="btn btn-primary collapsed"
+            data-bs-toggle="collapse"
+            href="#collapseExample"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Link with href
+          </a>
+          <button
+            class="btn btn-primary collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseExample"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Button with data-bs-target
+          </button>
+        </p>
+        <section class="collapse" id="collapseExample">
+          <section class="card card-body">
+            Some placeholder content for the collapse component. This panel is
+            hidden by default but revealed when the user activates the relevant
+            trigger.
+          </section>
+        </section>
+      </section>
+      <section>
+        <p>
+          <a
+            class="btn btn-primary collapsed"
+            data-bs-toggle="collapse"
+            href="#multiCollapseExample1"
+            role="button"
+            aria-expanded="false"
+            aria-controls="multiCollapseExample1"
+            >Toggle first element</a
+          >
+          <button
+            class="btn btn-primary collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#multiCollapseExample2"
+            aria-expanded="false"
+            aria-controls="multiCollapseExample2"
+          >
+            Toggle second element
+          </button>
+          <button
+            class="btn btn-primary collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target=".multi-collapse"
+            aria-expanded="false"
+            aria-controls="multiCollapseExample1 multiCollapseExample2"
+          >
+            Toggle both elements
+          </button>
+        </p>
+        <section class="row">
+          <section class="col">
+            <section
+              class="multi-collapse collapse"
+              id="multiCollapseExample1"
+              
+            >
+              <section class="card card-body">
+                Some placeholder content for the first collapse component of
+                this multi-collapse example. This panel is hidden by default but
+                revealed when the user activates the relevant trigger.
+              </section>
+            </section>
+          </section>
+          <section class="col">
+            <section
+              class="multi-collapse collapse"
+              id="multiCollapseExample2"
+              
+            >
+              <section class="card card-body">
+                Some placeholder content for the second collapse component of
+                this multi-collapse example. This panel is hidden by default but
+                revealed when the user activates the relevant trigger.
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+  </body>
+</html>
